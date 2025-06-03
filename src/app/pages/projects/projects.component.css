@@ -1,0 +1,76 @@
+.projects-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #2d3436;
+}
+
+.project-card {
+  background: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  padding: 1.8rem 2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.project-card:hover {
+  background-color: #f0f4f8;
+}
+
+.project-basic h3 {
+  color: #34495e;
+  margin-bottom: 0.4rem;
+}
+
+.project-basic p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+}
+
+.project-details {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  border-left: 3px solid #3498db;
+}
+
+.project-details p,
+.project-details ul {
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+}
+
+.project-details ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.project-details li {
+  margin-bottom: 0.5rem;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #2980b9;
+  font-weight: 600;
+  font-size: 0.9rem;
+  float: right;
+  cursor: pointer;
+  padding: 0;
+  user-select: none;
+}
+
+.toggle-btn:focus {
+  outline: none;
+  text-decoration: underline;
+}

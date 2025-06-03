@@ -1,0 +1,31 @@
+<section class="projects-container">
+  <h2>📁Projects</h2>
+
+  <div *ngFor="let project of projects" class="project-card">
+    <div class="project-basic" (click)="toggleProject(project)" role="button" tabindex="0">
+      <h3>{{ project.title }}</h3>
+      <p><strong>Client:</strong> {{ project.client }}</p>
+      <p><strong>Domain:</strong> {{ project.domain }}</p>
+      <p><strong>Duration:</strong> {{ project.duration }}</p>
+      <button class="toggle-btn">{{ project.expanded ? 'Hide Details ▲' : 'Show Details ▼' }}</button>
+    </div>
+
+    <div *ngIf="project.expanded" class="project-details">
+      <p><strong>Project Description:</strong> {{ project.description }}</p>
+
+        <p *ngIf="project.link">
+    <a [href]="project.link" target="_blank" rel="noopener noreferrer">
+      Visit Project
+    </a>
+  </p>
+
+      <p><strong>Roles & Responsibilities:</strong></p>
+      <ul>
+        <li *ngFor="let task of project.responsibilities">{{ task }}</li>
+      </ul>
+    </div>
+
+    <hr />
+  </div>
+</section>
+
