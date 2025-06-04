@@ -63,7 +63,8 @@ export class ProjectsComponent {
       domain: 'Social media platform',
       duration: 'May 2025 – May 2025',
       description: `This is a simple social media app I made using Angular and Springboot
-  ,  Please note:  I have deployed application on free servers so it has a problem of cold start i.e. they stop services after certain intervals of nactivity so when we try to login/signIn after long time it will take 10-15 mins to start services
+  ,  Please note:  I have deployed application on free servers so it has a problem of cold start i.e. they stop services after certain intervals of nactivity so when we try to login/signIn after long time it will take 10-15 mins to start services.
+      Credentials:-       email= amey.com, password=amey.
       `,
       responsibilities: [
         'Developed front end components using Angular framework.',
